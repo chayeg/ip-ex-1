@@ -1,0 +1,60 @@
+Formatting fonts
+ - <font> tag enables to customize various aspects of the text on pages.
+ - attributes such as face, size and color can be used with font tag.
+ - Example: <font face = "arial" size = "4" color = "#ffeedd">
+                     your text
+                  </font>
+ - have opening and closing tag
+ - <basefont> tag can be used to change the default font face and size for page
+ - <basefont> tag has only opening tag, therefore, forward slash used before closing bracket for xHTML compatability
+ Example: <basefont face = "arial" />
+
+For the face attribute in font tag you can give backup fonts. In case, if the user computer doesn't have that font, the second will be checked. etc
+Example: <font face = "gill sams, verdana, arial, helvetica">
+                        your text
+               </font>
+ * If all four not found the browser use the default font face.
+For Size attribute
+   - either absolute or relative value can be given.
+   - Absolute size use value between 1 and 7
+   Example: <font size = "4">
+   - Relative font size defines font size relative to the default font size.
+     Example: <font size = "2">
+   - the default font size is 3
+For color attribute
+  - monitors display color in RGB, each two digit used to represent each color
+  - document color can be given using attributes in the body tag.
+      Attribute                                                value
+ --------------------------------------------------------------------
+     bgcolor                                "#rrggbb" (hexadecimal) or "color name"
+     text                                      "#rrggbb" (hexadecimal) or "color name"
+Example: <body bgcolor = "#000000" text = "#ffffff">
+                          This is body text.
+</body>
+Text color of specific area can be changed by using color attribute of font tag
+ Example: <font color = "#333333">
+                          This text is in gray
+</font>
+Other Physical Style tags - to modify text
+===============================================
+<b>				bold
+<big>				increments the font size by 1 each timeit is used
+<i>				Italic
+<tt>				type writer font
+<small>				decrease the font size by 1 each time it is used (min 1, default is 3)
+<strike>		strike through
+<sub>		subscript
+<sup>		Superscript
+<u>		underline
+
+Formatting Marquee
+------------------------------------------------------------
+1. truespeed	seconds (is used to delay the scroll lesser than 60 second)
+2. vspace		pixels (Define vertical space around the marquee)
+3. width		pixels% (Defines the marquee's width)
+4. behavior	scroll, slide, alternate (defines the scrolling type)
+5. bgcolor		rgb(x,y,z)#xxxxxx, colorname (used to give backgroud color)
+6. direction	up, down, left, right (sets the direction for scrolling content)
+7. height		pixels%( defines the marquee's height)
+8. loop		number (define how many times the content will scorll, if we don't define this, the content will scroll forever
+9. hspace		pixels (define horizontal space around the marquee)
